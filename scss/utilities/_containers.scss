@@ -1,0 +1,45 @@
+// ========================================
+// Containers
+// ========================================
+
+// Page Container
+
+.wrapper-outer	{
+	max-width: 120rem;
+	background-image: url(../img/matrix-wallpaper.jpg);
+	background-repeat: no-repeat;
+	margin: 0 auto;
+}
+
+// Content Container
+
+.wrapper-inner	{
+	width: 100%;
+	max-width: 75rem;
+	min-height: 100dvh;
+	padding: 1rem;
+	background: rgba($javascript, 0.7);
+	margin: 0 auto;
+	@include mqm(medium) {
+		padding: 2rem;
+	}
+	@include mqm(large) {
+		padding: 4rem;
+	}
+}
+
+// Setup Container
+
+.setup-container	{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+
+// Config Container
+
+.config-container	{
+	display: flex;
+	justify-content: center;
+}

@@ -1,0 +1,34 @@
+// ========================================
+// Colours
+// ========================================
+
+// Descriptive Base Colours		
+		
+$black			:	#000000;
+$white 			:	#ffffff;
+$color-pri		:	#0652ff; // 
+$search			:	#cccccc; // chinese-silver
+$green			:	#2ecc71; // ufo-green
+$purple			:	#926fb1; // purple-mountain-majesty
+$news-border	:	#dddddd; // 
+$html			:	#f06529; // 
+$css			:	#2965f1; // 
+$sass			:	#cc6699; // 
+$javascript		:	#f0db4f; // 
+$jquery			:	#0868ac; // 
+$git			:	#f1502f; // 
+$bash			:	#4eaa25; // 
+$required		:	#d24d57; // dark-terra-cotta
+$facebook		:	#3b5998; // chinese-blue
+$linkedin		:	#0077b5; // star-command-blue
+
+// Colour Usage
+
+$colors:
+	(
+		success: $green,
+		danger: $required,
+		option: $javascript,
+		select: $git,
+		submit: $color-pri
+);

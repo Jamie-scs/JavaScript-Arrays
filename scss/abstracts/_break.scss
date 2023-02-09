@@ -1,0 +1,21 @@
+// ========================================
+// Breakpoints
+// ========================================
+
+$breakpoints-up:		(
+	small: 35rem,
+	medium: 48rem,
+	large: 62rem,
+	x-large: 75rem,
+	xx-large: 120rem
+);
+
+$breakpoints-down:		(
+	small: 34.9375rem,
+	medium: 47.9375rem,
+	large: 61.9375rem,
+	x-large: 74.9375rem,
+	xx-large: 119.9375rem
+);
+
+$sidebar	: 14rem;

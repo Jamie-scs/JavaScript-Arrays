@@ -1,0 +1,26 @@
+// ========================================
+// Typography
+// ========================================
+
+// Header
+
+.logo		{
+	width: 5rem;
+	height: 5rem;
+	font-size: 2.5rem;
+	font-weight: 900;
+	color: lighten($color-pri, 10%);
+	-webkit-text-fill-color: lighten($color-pri, 10%);
+	-webkit-text-stroke-width: 0.1rem;
+	-webkit-text-stroke-color: black;
+	padding: 0.7rem;
+	background: $white;
+	border-radius: 50%;
+	&:hover,
+	&:focus         	{
+		font-size: 2.7rem;
+		-webkit-text-fill-color: lighten($color-pri, 20%);
+		padding-top: 0.5rem;
+		text-shadow: 0 0 0.5rem $color-pri;
+	}
+}

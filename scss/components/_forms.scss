@@ -1,0 +1,72 @@
+// ========================================
+// Form Elements
+// ========================================
+
+label 				{
+	display: block;
+	text-align: left;
+	margin: 0.625rem 0 0.2rem;
+}
+
+.form-control		{
+	width: 100%;
+	min-height: 2.75rem;
+	background-color: $news-border;
+	padding: 0.3rem 2.5rem 0.3rem 1rem;
+	border: none;
+	border-color: transparent;
+	border-radius: 0.35rem;
+	margin: 0;	
+	@include lift(0.25rem, 0.25rem, black);
+	@include highlight($color-pri, lighten($news-border, 10%));
+}
+
+textarea 			{
+	resize: vertical;
+}
+
+.form-group			{
+	display: flex;
+	flex-direction: column;
+	align-content: flex-start;
+	min-height: 42rem;
+}
+
+.btn-group			{
+	@include mqm(medium)	{
+		display: flex;
+		justify-content: flex-end;
+	}
+}
+
+// Validation
+
+.form-input			{
+	position: relative;
+}
+
+.validate-icn		{
+	position: absolute;
+	top: 1rem;
+	right: 0.8rem;
+	background: transparent;
+}
+
+.error 				{
+	font-size: 0.925rem;
+	margin: 0 0 0.2rem;
+}
+
+.success-icon 		{
+	color: green;
+}
+
+.error,
+.failure-icon 		{
+	color: red;
+}
+
+.success-icon,
+.failure-icon		{
+	opacity: 0;
+}

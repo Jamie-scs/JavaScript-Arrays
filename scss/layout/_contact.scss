@@ -1,0 +1,86 @@
+// ========================================
+// Contact
+// ========================================
+
+.contact-container	{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background: $search;
+	padding: 1rem;
+	@include mqm(medium)	{
+		display: grid;
+		align-items: start;
+		grid-template-columns: 3.5fr 4fr;
+		gap: 2rem;
+		padding: 1.5rem;
+		border-radius: 1rem;
+		box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.6);
+		margin: 2rem 0 0;
+	}
+	@include mqm(large)		{
+		grid-template-columns: 1fr 1fr;
+		padding: 2rem;
+	}
+}
+
+.info-container		{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	height: 100%;
+	@include mqm(medium)	{
+		max-width: 45ch;
+	}
+}
+
+.contact-info		{
+	@include mqm(x-large){
+		justify-self: center;
+	}
+	address				{
+		min-height: 3.8rem;
+	@include mqm(medium)	{	
+		min-height: 4.2rem;
+		}
+	@include mqm(large)	{	
+		min-height: 6rem;
+		}
+	}
+	.tel				{
+		position: relative;
+		@include fancy-line(0rem);
+		@include fancy-text(1.5rem);
+	}
+	.email				{
+		position: relative;
+		@include fancy-line(-0.1rem);
+		@include fancy-text(1.5rem);
+	}
+}
+
+.contact-notice		{
+	max-width: 45ch;
+}
+
+.notice				{
+	padding: 0.5rem;
+	border: 0.2rem solid $color-pri;
+	border-radius: 1rem 1rem 0 1rem;
+	box-shadow: 0.4rem 0.625rem;
+	margin: -1rem 0 1.625rem;
+	strong			{
+		font-size: 0.875rem;
+	}
+	em 					{
+		text-decoration: underline;
+	}
+}
+
+.contact-form	{
+	width: 100%;
+	@include mqm(medium)	{
+		max-width: 35rem;
+	}
+}
