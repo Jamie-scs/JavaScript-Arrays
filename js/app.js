@@ -331,7 +331,7 @@ addBtn.addEventListener('click', () => {
 		refillNext()
 		fillNext()
 		fillCurrent()
-		saveArray()
+		// saveArray()
 		addSound.play();
 	}
 })
@@ -392,7 +392,7 @@ function fillGallery() {
 }
 
 function emptyGallery() {
-	if (galleryImages.length < galleryFrames.length && galleryFrames.length > 18) {
+	if (galleryImages.length < galleryFrames.length && galleryFrames.length > 10) {
 		removeGalleryItem()
 	}
 }
