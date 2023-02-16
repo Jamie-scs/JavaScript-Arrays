@@ -123,6 +123,6 @@
     &:focus                {
         text-decoration: none;
         color: $white;
-        background-color: darken($color, 5%);
+        background-color: darken($color, 2.5%);
     }
 }

@@ -52,7 +52,8 @@ textarea 			{
 	background: transparent;
 }
 
-.error 				{
+.error,
+.input-error 				{
 	font-size: 0.925rem;
 	margin: 0 0 0.2rem;
 }
@@ -62,11 +63,14 @@ textarea 			{
 }
 
 .error,
-.failure-icon 		{
+.input-error,
+.failure-icon,
+.input-failure 		{
 	color: red;
 }
 
 .success-icon,
-.failure-icon		{
+.failure-icon,
+.input-failure		{
 	opacity: 0;
 }

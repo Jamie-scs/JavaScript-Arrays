@@ -1,17 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,600&display=swap");
-/* line 12, ../../netmatters/JavaScript Array Reflection/scss/base/_reset.scss */
+/* line 12, ../../netmatters/JavaScript Array Reflection/JavaScript-Arrays/scss/base/_reset.scss */
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
 
-/* line 20, ../../netmatters/JavaScript Array Reflection/scss/base/_reset.scss */
+/* line 20, ../../netmatters/JavaScript Array Reflection/JavaScript-Arrays/scss/base/_reset.scss */
 body {
   margin: 0;
 }
 
-/* line 30, ../../netmatters/JavaScript Array Reflection/scss/base/_reset.scss */
+/* line 30, ../../netmatters/JavaScript Array Reflection/JavaScript-Arrays/scss/base/_reset.scss */
 article,
 aside,
 details,
@@ -27,7 +27,7 @@ summary {
   display: block;
 }
 
-/* line 49, ../../netmatters/JavaScript Array Reflection/scss/base/_reset.scss */
+/* line 49, ../../netmatters/JavaScript Array Reflection/JavaScript-Arrays/scss/base/_reset.scss */
 audio,
 canvas,
 progress,
@@ -36,63 +36,63 @@ video {
   vertical-align: baseline;
 }
 
-/* line 61, ../../netmatters/JavaScript Array Reflection/scss/base/_reset.scss */
+/* line 61, ../../netmatters/JavaScript Array Reflection/JavaScript-Arrays/scss/base/_reset.scss */
 audio:not([controls]) {
   display: none;
   height: 0;
 }
 
-/* line 70, ../../netmatters/JavaScript Array Reflection/scss/base/_reset.scss */
+/* line 70, ../../netmatters/JavaScript Array Reflection/JavaScript-Arrays/scss/base/_reset.scss */
 [hidden],
 template {
   display: none;
 }
 
-/* line 79, ../../netmatters/JavaScript Array Reflection/scss/base/_reset.scss */
+/* line 79, ../../netmatters/JavaScript Array Reflection/JavaScript-Arrays/scss/base/_reset.scss */
 a {
   background: transparent;
 }
 
-/* line 86, ../../netmatters/JavaScript Array Reflection/scss/base/_reset.scss */
+/* line 86, ../../netmatters/JavaScript Array Reflection/JavaScript-Arrays/scss/base/_reset.scss */
 a:active,
 a:hover {
   outline: 0;
 }
 
-/* line 95, ../../netmatters/JavaScript Array Reflection/scss/base/_reset.scss */
+/* line 95, ../../netmatters/JavaScript Array Reflection/JavaScript-Arrays/scss/base/_reset.scss */
 abbr[title] {
   border-bottom: 1px dotted;
 }
 
-/* line 102, ../../netmatters/JavaScript Array Reflection/scss/base/_reset.scss */
+/* line 102, ../../netmatters/JavaScript Array Reflection/JavaScript-Arrays/scss/base/_reset.scss */
 b,
 strong {
   font-weight: bold;
 }
 
-/* line 110, ../../netmatters/JavaScript Array Reflection/scss/base/_reset.scss */
+/* line 110, ../../netmatters/JavaScript Array Reflection/JavaScript-Arrays/scss/base/_reset.scss */
 dfn {
   font-style: italic;
 }
 
-/* line 118, ../../netmatters/JavaScript Array Reflection/scss/base/_reset.scss */
+/* line 118, ../../netmatters/JavaScript Array Reflection/JavaScript-Arrays/scss/base/_reset.scss */
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
 }
 
-/* line 126, ../../netmatters/JavaScript Array Reflection/scss/base/_reset.scss */
+/* line 126, ../../netmatters/JavaScript Array Reflection/JavaScript-Arrays/scss/base/_reset.scss */
 mark {
   background: #ff0;
   color: #000;
 }
 
-/* line 134, ../../netmatters/JavaScript Array Reflection/scss/base/_reset.scss */
+/* line 134, ../../netmatters/JavaScript Array Reflection/JavaScript-Arrays/scss/base/_reset.scss */
 small {
   font-size: 80%;
 }
 
-/* line 141, ../../netmatters/JavaScript Array Reflection/scss/base/_reset.scss */
+/* line 141, ../../netmatters/JavaScript Array Reflection/JavaScript-Arrays/scss/base/_reset.scss */
 sub,
 sup {
   font-size: 75%;
@@ -101,44 +101,44 @@ sup {
   vertical-align: baseline;
 }
 
-/* line 149, ../../netmatters/JavaScript Array Reflection/scss/base/_reset.scss */
+/* line 149, ../../netmatters/JavaScript Array Reflection/JavaScript-Arrays/scss/base/_reset.scss */
 sup {
   top: -0.5em;
 }
 
-/* line 153, ../../netmatters/JavaScript Array Reflection/scss/base/_reset.scss */
+/* line 153, ../../netmatters/JavaScript Array Reflection/JavaScript-Arrays/scss/base/_reset.scss */
 sub {
   bottom: -0.25em;
 }
 
-/* line 161, ../../netmatters/JavaScript Array Reflection/scss/base/_reset.scss */
+/* line 161, ../../netmatters/JavaScript Array Reflection/JavaScript-Arrays/scss/base/_reset.scss */
 img {
   border: 0;
 }
 
-/* line 168, ../../netmatters/JavaScript Array Reflection/scss/base/_reset.scss */
+/* line 168, ../../netmatters/JavaScript Array Reflection/JavaScript-Arrays/scss/base/_reset.scss */
 svg:not(:root) {
   overflow: hidden;
 }
 
-/* line 176, ../../netmatters/JavaScript Array Reflection/scss/base/_reset.scss */
+/* line 176, ../../netmatters/JavaScript Array Reflection/JavaScript-Arrays/scss/base/_reset.scss */
 figure {
   margin: 1em 40px;
 }
 
-/* line 183, ../../netmatters/JavaScript Array Reflection/scss/base/_reset.scss */
+/* line 183, ../../netmatters/JavaScript Array Reflection/JavaScript-Arrays/scss/base/_reset.scss */
 hr {
   -moz-box-sizing: content-box;
   box-sizing: content-box;
   height: 0;
 }
 
-/* line 192, ../../netmatters/JavaScript Array Reflection/scss/base/_reset.scss */
+/* line 192, ../../netmatters/JavaScript Array Reflection/JavaScript-Arrays/scss/base/_reset.scss */
 pre {
   overflow: auto;
 }
 
-/* line 199, ../../netmatters/JavaScript Array Reflection/scss/base/_reset.scss */
+/* line 199, ../../netmatters/JavaScript Array Reflection/JavaScript-Arrays/scss/base/_reset.scss */
 code,
 kbd,
 pre,
@@ -147,7 +147,7 @@ samp {
   font-size: 1em;
 }
 
-/* line 218, ../../netmatters/JavaScript Array Reflection/scss/base/_reset.scss */
+/* line 218, ../../netmatters/JavaScript Array Reflection/JavaScript-Arrays/scss/base/_reset.scss */
 button,
 input,
 optgroup,
@@ -158,18 +158,18 @@ textarea {
   margin: 0;
 }
 
-/* line 231, ../../netmatters/JavaScript Array Reflection/scss/base/_reset.scss */
+/* line 231, ../../netmatters/JavaScript Array Reflection/JavaScript-Arrays/scss/base/_reset.scss */
 button {
   overflow: visible;
 }
 
-/* line 241, ../../netmatters/JavaScript Array Reflection/scss/base/_reset.scss */
+/* line 241, ../../netmatters/JavaScript Array Reflection/JavaScript-Arrays/scss/base/_reset.scss */
 button,
 select {
   text-transform: none;
 }
 
-/* line 253, ../../netmatters/JavaScript Array Reflection/scss/base/_reset.scss */
+/* line 253, ../../netmatters/JavaScript Array Reflection/JavaScript-Arrays/scss/base/_reset.scss */
 button,
 html input[type="button"],
 input[type="reset"],
@@ -178,38 +178,38 @@ input[type="submit"] {
   cursor: pointer;
 }
 
-/* line 264, ../../netmatters/JavaScript Array Reflection/scss/base/_reset.scss */
+/* line 264, ../../netmatters/JavaScript Array Reflection/JavaScript-Arrays/scss/base/_reset.scss */
 button[disabled],
 html input[disabled] {
   cursor: default;
 }
 
-/* line 272, ../../netmatters/JavaScript Array Reflection/scss/base/_reset.scss */
+/* line 272, ../../netmatters/JavaScript Array Reflection/JavaScript-Arrays/scss/base/_reset.scss */
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
   padding: 0;
 }
 
-/* line 282, ../../netmatters/JavaScript Array Reflection/scss/base/_reset.scss */
+/* line 282, ../../netmatters/JavaScript Array Reflection/JavaScript-Arrays/scss/base/_reset.scss */
 input {
   line-height: normal;
 }
 
-/* line 288, ../../netmatters/JavaScript Array Reflection/scss/base/_reset.scss */
+/* line 288, ../../netmatters/JavaScript Array Reflection/JavaScript-Arrays/scss/base/_reset.scss */
 * input[type="checkbox"],
 input[type="radio"] {
   box-sizing: border-box;
   padding: 0;
 }
 
-/* line 304, ../../netmatters/JavaScript Array Reflection/scss/base/_reset.scss */
+/* line 304, ../../netmatters/JavaScript Array Reflection/JavaScript-Arrays/scss/base/_reset.scss */
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
   height: auto;
 }
 
-/* line 314, ../../netmatters/JavaScript Array Reflection/scss/base/_reset.scss */
+/* line 314, ../../netmatters/JavaScript Array Reflection/JavaScript-Arrays/scss/base/_reset.scss */
 input[type="search"] {
   -webkit-appearance: textfield;
   -moz-box-sizing: content-box;
@@ -217,52 +217,57 @@ input[type="search"] {
   box-sizing: content-box;
 }
 
-/* line 326, ../../netmatters/JavaScript Array Reflection/scss/base/_reset.scss */
+/* line 326, ../../netmatters/JavaScript Array Reflection/JavaScript-Arrays/scss/base/_reset.scss */
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
-/* line 334, ../../netmatters/JavaScript Array Reflection/scss/base/_reset.scss */
+/* line 334, ../../netmatters/JavaScript Array Reflection/JavaScript-Arrays/scss/base/_reset.scss */
 fieldset {
   border: 1px solid #c0c0c0;
   margin: 0 2px;
   padding: 0.35em 0.625em 0.75em;
 }
 
-/* line 344, ../../netmatters/JavaScript Array Reflection/scss/base/_reset.scss */
+/* line 344, ../../netmatters/JavaScript Array Reflection/JavaScript-Arrays/scss/base/_reset.scss */
 legend {
   border: 0;
   padding: 0;
 }
 
-/* line 352, ../../netmatters/JavaScript Array Reflection/scss/base/_reset.scss */
+/* line 352, ../../netmatters/JavaScript Array Reflection/JavaScript-Arrays/scss/base/_reset.scss */
 textarea {
   overflow: auto;
 }
 
-/* line 360, ../../netmatters/JavaScript Array Reflection/scss/base/_reset.scss */
+/* line 360, ../../netmatters/JavaScript Array Reflection/JavaScript-Arrays/scss/base/_reset.scss */
 optgroup {
   font-weight: bold;
 }
 
-/* line 368, ../../netmatters/JavaScript Array Reflection/scss/base/_reset.scss */
+/* line 368, ../../netmatters/JavaScript Array Reflection/JavaScript-Arrays/scss/base/_reset.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 373, ../../netmatters/JavaScript Array Reflection/scss/base/_reset.scss */
+/* line 373, ../../netmatters/JavaScript Array Reflection/JavaScript-Arrays/scss/base/_reset.scss */
 td,
 th {
   padding: 0;
 }
 
-/* line 5, ../../netmatters/JavaScript Array Reflection/scss/base/_root.scss */
+/* line 5, ../../netmatters/JavaScript Array Reflection/JavaScript-Arrays/scss/base/_root.scss */
 * {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   font-size: 1em;
+}
+
+/* line 9, ../../netmatters/JavaScript Array Reflection/JavaScript-Arrays/scss/base/_root.scss */
+*:focus-visible {
+  outline: none;
 }
 
 @font-face {
@@ -273,7 +278,7 @@ th {
   font-style: normal;
 }
 
-/* line 7, ../../netmatters/JavaScript Array Reflection/scss/base/_base.scss */
+/* line 7, ../../netmatters/JavaScript Array Reflection/JavaScript-Arrays/scss/base/_base.scss */
 body {
   font-family: Poppins, sans-serif;
   text-align: center;
@@ -282,12 +287,12 @@ body {
   background: #000000;
 }
 
-/* line 15, ../../netmatters/JavaScript Array Reflection/scss/base/_base.scss */
+/* line 15, ../../netmatters/JavaScript Array Reflection/JavaScript-Arrays/scss/base/_base.scss */
 a {
   text-decoration: none;
 }
 
-/* line 7, ../../netmatters/JavaScript Array Reflection/scss/base/_typography.scss */
+/* line 7, ../../netmatters/JavaScript Array Reflection/JavaScript-Arrays/scss/base/_typography.scss */
 .logo {
   width: 5rem;
   height: 5rem;
@@ -302,7 +307,7 @@ a {
   border-radius: 50%;
 }
 
-/* line 19, ../../netmatters/JavaScript Array Reflection/scss/base/_typography.scss */
+/* line 19, ../../netmatters/JavaScript Array Reflection/JavaScript-Arrays/scss/base/_typography.scss */
 .logo:hover, .logo:focus {
   font-size: 2.7rem;
   -webkit-text-fill-color: #6c99ff;
@@ -310,7 +315,7 @@ a {
   text-shadow: 0 0 0.5rem #0652ff;
 }
 
-/* line 7, ../../netmatters/JavaScript Array Reflection/scss/components/_extends.scss */
+/* line 7, ../../netmatters/JavaScript Array Reflection/JavaScript-Arrays/scss/components/_extends.scss */
 .tech-stack, .social-links {
   display: flex;
   flex-direction: column;
@@ -322,20 +327,25 @@ a {
   margin-top: 0;
 }
 
-/* line 9, ../../netmatters/JavaScript Array Reflection/scss/components/_icons.scss */
+/* line 18, ../../netmatters/JavaScript Array Reflection/JavaScript-Arrays/scss/components/_extends.scss */
+.input-container, .address-container, .preview-container {
+  box-shadow: -0.75rem -0.5rem 0.5rem rgba(0, 0, 0, 0.6);
+}
+
+/* line 9, ../../netmatters/JavaScript Array Reflection/JavaScript-Arrays/scss/components/_icons.scss */
 .tech-stack svg {
   width: 2.2rem;
   height: 2.2rem;
   margin: 0.25rem;
 }
 
-/* line 22, ../../netmatters/JavaScript Array Reflection/scss/components/_icons.scss */
+/* line 22, ../../netmatters/JavaScript Array Reflection/JavaScript-Arrays/scss/components/_icons.scss */
 .social-icn {
   width: 100%;
   min-height: 3.75rem;
 }
 
-/* line 25, ../../netmatters/JavaScript Array Reflection/scss/components/_icons.scss */
+/* line 25, ../../netmatters/JavaScript Array Reflection/JavaScript-Arrays/scss/components/_icons.scss */
 .social-icn a span {
   font-size: 2rem;
   line-height: 2rem;
@@ -344,33 +354,33 @@ a {
   border-radius: 50%;
 }
 
-/* line 32, ../../netmatters/JavaScript Array Reflection/scss/components/_icons.scss */
+/* line 32, ../../netmatters/JavaScript Array Reflection/JavaScript-Arrays/scss/components/_icons.scss */
 .social-icn .facebook > span {
   color: #3b5998;
 }
 
-/* line 35, ../../netmatters/JavaScript Array Reflection/scss/components/_icons.scss */
+/* line 35, ../../netmatters/JavaScript Array Reflection/JavaScript-Arrays/scss/components/_icons.scss */
 .social-icn .linkedin > span {
   color: #0077b5;
 }
 
-/* line 38, ../../netmatters/JavaScript Array Reflection/scss/components/_icons.scss */
+/* line 38, ../../netmatters/JavaScript Array Reflection/JavaScript-Arrays/scss/components/_icons.scss */
 .social-icn .github > span {
   color: #f1502f;
 }
 
-/* line 45, ../../netmatters/JavaScript Array Reflection/scss/components/_icons.scss */
+/* line 45, ../../netmatters/JavaScript Array Reflection/JavaScript-Arrays/scss/components/_icons.scss */
 .credit {
   margin-top: 0;
 }
 
-/* line 47, ../../netmatters/JavaScript Array Reflection/scss/components/_icons.scss */
+/* line 47, ../../netmatters/JavaScript Array Reflection/JavaScript-Arrays/scss/components/_icons.scss */
 .credit svg {
   width: 5rem;
   height: 5rem;
 }
 
-/* line 55, ../../netmatters/JavaScript Array Reflection/scss/components/_icons.scss */
+/* line 55, ../../netmatters/JavaScript Array Reflection/JavaScript-Arrays/scss/components/_icons.scss */
 [data-icon]:before {
   font-family: "icomoon";
   content: attr(data-icon);
@@ -382,14 +392,14 @@ a {
   -webkit-font-smoothing: antialiased;
 }
 
-/* line 5, ../../netmatters/JavaScript Array Reflection/scss/components/_forms.scss */
+/* line 5, ../../netmatters/JavaScript Array Reflection/JavaScript-Arrays/scss/components/_forms.scss */
 label {
   display: block;
   text-align: left;
   margin: 0.625rem 0 0.2rem;
 }
 
-/* line 11, ../../netmatters/JavaScript Array Reflection/scss/components/_forms.scss */
+/* line 11, ../../netmatters/JavaScript Array Reflection/JavaScript-Arrays/scss/components/_forms.scss */
 .form-control {
   width: 100%;
   min-height: 2.75rem;
@@ -404,25 +414,25 @@ label {
   transition: 500ms ease;
 }
 
-/* line 100, ../../netmatters/JavaScript Array Reflection/scss/abstracts/_mixins.scss */
+/* line 100, ../../netmatters/JavaScript Array Reflection/JavaScript-Arrays/scss/abstracts/_mixins.scss */
 .form-control:hover, .form-control:focus {
   top: -0.25rem;
   transition: 500ms ease;
   box-shadow: 0 0.25rem 0.25rem 0.25rem rgba(0, 0, 0, 0.15);
 }
 
-/* line 111, ../../netmatters/JavaScript Array Reflection/scss/abstracts/_mixins.scss */
+/* line 111, ../../netmatters/JavaScript Array Reflection/JavaScript-Arrays/scss/abstracts/_mixins.scss */
 .form-control:hover, .form-control:focus, .form-control:active {
   border: 0.05rem solid #0652ff;
   background-color: #f7f7f7;
 }
 
-/* line 24, ../../netmatters/JavaScript Array Reflection/scss/components/_forms.scss */
+/* line 24, ../../netmatters/JavaScript Array Reflection/JavaScript-Arrays/scss/components/_forms.scss */
 textarea {
   resize: vertical;
 }
 
-/* line 28, ../../netmatters/JavaScript Array Reflection/scss/components/_forms.scss */
+/* line 28, ../../netmatters/JavaScript Array Reflection/JavaScript-Arrays/scss/components/_forms.scss */
 .form-group {
   display: flex;
   flex-direction: column;
@@ -431,19 +441,19 @@ textarea {
 }
 
 @media screen and (min-width: 48rem) {
-  /* line 35, ../../netmatters/JavaScript Array Reflection/scss/components/_forms.scss */
+  /* line 35, ../../netmatters/JavaScript Array Reflection/JavaScript-Arrays/scss/components/_forms.scss */
   .btn-group {
     display: flex;
     justify-content: flex-end;
   }
 }
 
-/* line 44, ../../netmatters/JavaScript Array Reflection/scss/components/_forms.scss */
+/* line 44, ../../netmatters/JavaScript Array Reflection/JavaScript-Arrays/scss/components/_forms.scss */
 .form-input {
   position: relative;
 }
 
-/* line 48, ../../netmatters/JavaScript Array Reflection/scss/components/_forms.scss */
+/* line 48, ../../netmatters/JavaScript Array Reflection/JavaScript-Arrays/scss/components/_forms.scss */
 .validate-icn {
   position: absolute;
   top: 1rem;
@@ -451,126 +461,203 @@ textarea {
   background: transparent;
 }
 
-/* line 55, ../../netmatters/JavaScript Array Reflection/scss/components/_forms.scss */
-.error {
+/* line 55, ../../netmatters/JavaScript Array Reflection/JavaScript-Arrays/scss/components/_forms.scss */
+.error,
+.input-error {
   font-size: 0.925rem;
   margin: 0 0 0.2rem;
 }
 
-/* line 60, ../../netmatters/JavaScript Array Reflection/scss/components/_forms.scss */
+/* line 61, ../../netmatters/JavaScript Array Reflection/JavaScript-Arrays/scss/components/_forms.scss */
 .success-icon {
   color: green;
 }
 
-/* line 64, ../../netmatters/JavaScript Array Reflection/scss/components/_forms.scss */
+/* line 65, ../../netmatters/JavaScript Array Reflection/JavaScript-Arrays/scss/components/_forms.scss */
 .error,
-.failure-icon {
+.input-error,
+.failure-icon,
+.input-failure {
   color: red;
 }
 
-/* line 69, ../../netmatters/JavaScript Array Reflection/scss/components/_forms.scss */
+/* line 72, ../../netmatters/JavaScript Array Reflection/JavaScript-Arrays/scss/components/_forms.scss */
 .success-icon,
-.failure-icon {
+.failure-icon,
+.input-failure {
   opacity: 0;
 }
 
-/* line 7, ../../netmatters/JavaScript Array Reflection/scss/components/_buttons.scss */
+/* line 7, ../../netmatters/JavaScript Array Reflection/JavaScript-Arrays/scss/components/_buttons.scss */
 .btn {
-  width: 90%;
-  min-height: 3rem;
-  font-size: .825rem;
+  min-width: 50%;
+  min-height: 2.75rem;
+  font-size: 1rem;
   font-weight: 600;
   text-transform: uppercase;
-  padding: 0.75rem 1.75rem;
-  border: none;
+  padding: 0 1.75rem;
+  border: 0.2rem solid rgba(255, 255, 255, 0.4);
   border-radius: 0.5rem;
+  box-shadow: -0.05rem -0.05rem 0.4rem 0.2rem rgba(0, 0, 0, 0.4);
   margin: 1rem;
 }
 
 @media screen and (min-width: 35rem) {
-  /* line 7, ../../netmatters/JavaScript Array Reflection/scss/components/_buttons.scss */
+  /* line 7, ../../netmatters/JavaScript Array Reflection/JavaScript-Arrays/scss/components/_buttons.scss */
   .btn {
     padding: 0.75rem 2.5rem;
   }
 }
 
 @media screen and (min-width: 48rem) {
-  /* line 7, ../../netmatters/JavaScript Array Reflection/scss/components/_buttons.scss */
+  /* line 7, ../../netmatters/JavaScript Array Reflection/JavaScript-Arrays/scss/components/_buttons.scss */
   .btn {
     min-width: 8rem;
     border-radius: 0.75rem;
   }
 }
 
-/* line 28, ../../netmatters/JavaScript Array Reflection/scss/components/_buttons.scss */
+/* line 25, ../../netmatters/JavaScript Array Reflection/JavaScript-Arrays/scss/components/_buttons.scss */
+.btn:active {
+  box-shadow: inset -0.2rem -0.2rem 0.4rem 0.2rem rgba(0, 0, 0, 0.4);
+}
+
+/* line 30, ../../netmatters/JavaScript Array Reflection/JavaScript-Arrays/scss/components/_buttons.scss */
+.control-btn {
+  min-width: 25%;
+}
+
+/* line 34, ../../netmatters/JavaScript Array Reflection/JavaScript-Arrays/scss/components/_buttons.scss */
+.gallery-btn {
+  min-width: 20%;
+}
+
+/* line 40, ../../netmatters/JavaScript Array Reflection/JavaScript-Arrays/scss/components/_buttons.scss */
 .btn.success {
   background-color: #2ecc71;
 }
 
-/* line 122, ../../netmatters/JavaScript Array Reflection/scss/abstracts/_mixins.scss */
+/* line 122, ../../netmatters/JavaScript Array Reflection/JavaScript-Arrays/scss/abstracts/_mixins.scss */
 .btn.success:hover, .btn.success:focus {
   text-decoration: none;
   color: #ffffff;
-  background-color: #29b765;
+  background-color: #2cc26b;
 }
 
-/* line 28, ../../netmatters/JavaScript Array Reflection/scss/components/_buttons.scss */
+/* line 43, ../../netmatters/JavaScript Array Reflection/JavaScript-Arrays/scss/components/_buttons.scss */
+.btn.success:active {
+  border-color: #2ecc71;
+}
+
+/* line 49, ../../netmatters/JavaScript Array Reflection/JavaScript-Arrays/scss/components/_buttons.scss */
+.gallery-btn.success {
+  background-color: rgba(46, 204, 113, 0.8);
+}
+
+/* line 40, ../../netmatters/JavaScript Array Reflection/JavaScript-Arrays/scss/components/_buttons.scss */
 .btn.danger {
   background-color: #d24d57;
 }
 
-/* line 122, ../../netmatters/JavaScript Array Reflection/scss/abstracts/_mixins.scss */
+/* line 122, ../../netmatters/JavaScript Array Reflection/JavaScript-Arrays/scss/abstracts/_mixins.scss */
 .btn.danger:hover, .btn.danger:focus {
   text-decoration: none;
   color: #ffffff;
-  background-color: #cd3944;
+  background-color: #cf434d;
 }
 
-/* line 28, ../../netmatters/JavaScript Array Reflection/scss/components/_buttons.scss */
+/* line 43, ../../netmatters/JavaScript Array Reflection/JavaScript-Arrays/scss/components/_buttons.scss */
+.btn.danger:active {
+  border-color: #d24d57;
+}
+
+/* line 49, ../../netmatters/JavaScript Array Reflection/JavaScript-Arrays/scss/components/_buttons.scss */
+.gallery-btn.danger {
+  background-color: rgba(210, 77, 87, 0.8);
+}
+
+/* line 40, ../../netmatters/JavaScript Array Reflection/JavaScript-Arrays/scss/components/_buttons.scss */
 .btn.option {
   background-color: #f0db4f;
 }
 
-/* line 122, ../../netmatters/JavaScript Array Reflection/scss/abstracts/_mixins.scss */
+/* line 122, ../../netmatters/JavaScript Array Reflection/JavaScript-Arrays/scss/abstracts/_mixins.scss */
 .btn.option:hover, .btn.option:focus {
   text-decoration: none;
   color: #ffffff;
-  background-color: #eed638;
+  background-color: #efd943;
 }
 
-/* line 28, ../../netmatters/JavaScript Array Reflection/scss/components/_buttons.scss */
+/* line 43, ../../netmatters/JavaScript Array Reflection/JavaScript-Arrays/scss/components/_buttons.scss */
+.btn.option:active {
+  border-color: #f0db4f;
+}
+
+/* line 49, ../../netmatters/JavaScript Array Reflection/JavaScript-Arrays/scss/components/_buttons.scss */
+.gallery-btn.option {
+  background-color: rgba(240, 219, 79, 0.8);
+}
+
+/* line 40, ../../netmatters/JavaScript Array Reflection/JavaScript-Arrays/scss/components/_buttons.scss */
 .btn.select {
   background-color: #f1502f;
 }
 
-/* line 122, ../../netmatters/JavaScript Array Reflection/scss/abstracts/_mixins.scss */
+/* line 122, ../../netmatters/JavaScript Array Reflection/JavaScript-Arrays/scss/abstracts/_mixins.scss */
 .btn.select:hover, .btn.select:focus {
   text-decoration: none;
   color: #ffffff;
-  background-color: #ef3c17;
+  background-color: #f04623;
 }
 
-/* line 28, ../../netmatters/JavaScript Array Reflection/scss/components/_buttons.scss */
+/* line 43, ../../netmatters/JavaScript Array Reflection/JavaScript-Arrays/scss/components/_buttons.scss */
+.btn.select:active {
+  border-color: #f1502f;
+}
+
+/* line 49, ../../netmatters/JavaScript Array Reflection/JavaScript-Arrays/scss/components/_buttons.scss */
+.gallery-btn.select {
+  background-color: rgba(241, 80, 47, 0.8);
+}
+
+/* line 40, ../../netmatters/JavaScript Array Reflection/JavaScript-Arrays/scss/components/_buttons.scss */
 .btn.submit {
   background-color: #0652ff;
 }
 
-/* line 122, ../../netmatters/JavaScript Array Reflection/scss/abstracts/_mixins.scss */
+/* line 122, ../../netmatters/JavaScript Array Reflection/JavaScript-Arrays/scss/abstracts/_mixins.scss */
 .btn.submit:hover, .btn.submit:focus {
   text-decoration: none;
   color: #ffffff;
-  background-color: #0048ec;
+  background-color: #004cf8;
 }
 
-/* line 5, ../../netmatters/JavaScript Array Reflection/scss/components/_gallery.scss */
+/* line 43, ../../netmatters/JavaScript Array Reflection/JavaScript-Arrays/scss/components/_buttons.scss */
+.btn.submit:active {
+  border-color: #0652ff;
+}
+
+/* line 49, ../../netmatters/JavaScript Array Reflection/JavaScript-Arrays/scss/components/_buttons.scss */
+.gallery-btn.submit {
+  background-color: rgba(6, 82, 255, 0.8);
+}
+
+/* line 5, ../../netmatters/JavaScript Array Reflection/JavaScript-Arrays/scss/components/_gallery.scss */
+.gallery-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* line 10, ../../netmatters/JavaScript Array Reflection/JavaScript-Arrays/scss/components/_gallery.scss */
 .img-array {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr));
   gap: 2rem;
+  margin: 2rem;
 }
 
-/* line 11, ../../netmatters/JavaScript Array Reflection/scss/components/_gallery.scss */
-.frame-pre {
+/* line 17, ../../netmatters/JavaScript Array Reflection/JavaScript-Arrays/scss/components/_gallery.scss */
+.frame-previous {
   position: relative;
   min-width: 6rem;
   min-height: 4.5rem;
@@ -582,7 +669,7 @@ textarea {
   outline: 0.1rem solid #311807;
 }
 
-/* line 23, ../../netmatters/JavaScript Array Reflection/scss/components/_gallery.scss */
+/* line 29, ../../netmatters/JavaScript Array Reflection/JavaScript-Arrays/scss/components/_gallery.scss */
 .frame-current {
   position: relative;
   min-width: 12rem;
@@ -595,8 +682,8 @@ textarea {
   outline: 0.1rem solid #311807;
 }
 
-/* line 35, ../../netmatters/JavaScript Array Reflection/scss/components/_gallery.scss */
-.frame-post {
+/* line 41, ../../netmatters/JavaScript Array Reflection/JavaScript-Arrays/scss/components/_gallery.scss */
+.frame-next {
   position: relative;
   min-width: 6rem;
   min-height: 4.5rem;
@@ -608,7 +695,7 @@ textarea {
   outline: 0.1rem solid #311807;
 }
 
-/* line 47, ../../netmatters/JavaScript Array Reflection/scss/components/_gallery.scss */
+/* line 53, ../../netmatters/JavaScript Array Reflection/JavaScript-Arrays/scss/components/_gallery.scss */
 .frame-container {
   display: flex;
   flex-direction: column;
@@ -616,12 +703,12 @@ textarea {
   align-content: space-between;
 }
 
-/* line 54, ../../netmatters/JavaScript Array Reflection/scss/components/_gallery.scss */
+/* line 60, ../../netmatters/JavaScript Array Reflection/JavaScript-Arrays/scss/components/_gallery.scss */
 .frame {
   position: relative;
   min-width: 8rem;
   min-height: 6rem;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(255, 255, 195, 0.4);
   border-top: 0.8rem solid #824112;
   border-right: 0.9rem solid #753a10;
   border-bottom: 0.8rem solid #67330e;
@@ -631,7 +718,7 @@ textarea {
   overflow: hidden;
 }
 
-/* line 77, ../../netmatters/JavaScript Array Reflection/scss/abstracts/_mixins.scss */
+/* line 77, ../../netmatters/JavaScript Array Reflection/JavaScript-Arrays/scss/abstracts/_mixins.scss */
 .frame::before {
   content: "";
   position: absolute;
@@ -646,12 +733,12 @@ textarea {
   transition: transform 250ms ease-in;
 }
 
-/* line 90, ../../netmatters/JavaScript Array Reflection/scss/abstracts/_mixins.scss */
+/* line 90, ../../netmatters/JavaScript Array Reflection/JavaScript-Arrays/scss/abstracts/_mixins.scss */
 .frame:hover::before, .frame:focus::before {
   transform: translate(0, -1100%);
 }
 
-/* line 69, ../../netmatters/JavaScript Array Reflection/scss/components/_gallery.scss */
+/* line 75, ../../netmatters/JavaScript Array Reflection/JavaScript-Arrays/scss/components/_gallery.scss */
 .uplighter {
   max-height: 2rem;
   background: rgba(255, 255, 175, 0.3);
@@ -659,20 +746,30 @@ textarea {
   margin: 0.25rem 0 1rem;
 }
 
-/* line 7, ../../netmatters/JavaScript Array Reflection/scss/layout/_home.scss */
+/* line 7, ../../netmatters/JavaScript Array Reflection/JavaScript-Arrays/scss/layout/_home.scss */
 .header {
   display: flex;
   justify-content: space-between;
 }
 
-/* line 12, ../../netmatters/JavaScript Array Reflection/scss/layout/_home.scss */
+/* line 12, ../../netmatters/JavaScript Array Reflection/JavaScript-Arrays/scss/layout/_home.scss */
 .logo-container {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-/* line 20, ../../netmatters/JavaScript Array Reflection/scss/layout/_home.scss */
+/* line 18, ../../netmatters/JavaScript Array Reflection/JavaScript-Arrays/scss/layout/_home.scss */
+.header-banner {
+  width: 100%;
+  height: 2.75rem;
+  text-align: center;
+  background: rgba(100, 100, 100, 0.9);
+  border: 0.0625rem solid #000;
+  border-radius: 1rem;
+}
+
+/* line 29, ../../netmatters/JavaScript Array Reflection/JavaScript-Arrays/scss/layout/_home.scss */
 .input-container {
   min-width: 16rem;
   max-width: 30rem;
@@ -681,11 +778,10 @@ textarea {
   padding: 1rem;
   border-radius: 1rem;
   border: 0.0625rem solid #000000;
-  box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.6);
   margin: 2rem;
 }
 
-/* line 34, ../../netmatters/JavaScript Array Reflection/scss/layout/_home.scss */
+/* line 43, ../../netmatters/JavaScript Array Reflection/JavaScript-Arrays/scss/layout/_home.scss */
 .address-container {
   min-width: 16rem;
   max-width: 30rem;
@@ -694,11 +790,10 @@ textarea {
   padding: 1rem;
   border-radius: 1rem;
   border: 0.0625rem solid #000000;
-  box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.6);
   margin: 2rem;
 }
 
-/* line 48, ../../netmatters/JavaScript Array Reflection/scss/layout/_home.scss */
+/* line 57, ../../netmatters/JavaScript Array Reflection/JavaScript-Arrays/scss/layout/_home.scss */
 .preview-container {
   min-width: 16rem;
   max-width: 50rem;
@@ -707,11 +802,10 @@ textarea {
   padding: 1rem;
   border-radius: 1rem;
   border: 0.0625rem solid #000000;
-  box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.6);
   margin: 2rem;
 }
 
-/* line 60, ../../netmatters/JavaScript Array Reflection/scss/layout/_home.scss */
+/* line 69, ../../netmatters/JavaScript Array Reflection/JavaScript-Arrays/scss/layout/_home.scss */
 .img-preview {
   display: flex;
   justify-content: space-evenly;
@@ -721,7 +815,7 @@ textarea {
   background: transparent;
 }
 
-/* line 71, ../../netmatters/JavaScript Array Reflection/scss/layout/_home.scss */
+/* line 80, ../../netmatters/JavaScript Array Reflection/JavaScript-Arrays/scss/layout/_home.scss */
 .output-container {
   max-width: 80rem;
   min-height: 32rem;
@@ -729,11 +823,11 @@ textarea {
   padding: 4rem 3rem 2rem;
   border-radius: 1rem;
   border: 0.0625rem solid #000000;
-  box-shadow: 0.5rem 0.75rem 0.5rem rgba(0, 0, 0, 0.6), inset 0 10rem 5rem 2.5rem rgba(255, 255, 255, 0.05), inset 20rem 0 10rem 5rem rgba(255, 255, 255, 0.05);
+  box-shadow: -0.75rem -0.5rem 0.5rem rgba(0, 0, 0, 0.6), inset 0 10rem 5rem 2.5rem rgba(255, 255, 255, 0.05), inset 20rem 0 10rem 5rem rgba(255, 255, 255, 0.05);
   margin: 2rem auto 6rem;
 }
 
-/* line 5, ../../netmatters/JavaScript Array Reflection/scss/layout/_contact.scss */
+/* line 5, ../../netmatters/JavaScript Array Reflection/JavaScript-Arrays/scss/layout/_contact.scss */
 .contact-container {
   display: flex;
   flex-direction: column;
@@ -743,7 +837,7 @@ textarea {
 }
 
 @media screen and (min-width: 48rem) {
-  /* line 5, ../../netmatters/JavaScript Array Reflection/scss/layout/_contact.scss */
+  /* line 5, ../../netmatters/JavaScript Array Reflection/JavaScript-Arrays/scss/layout/_contact.scss */
   .contact-container {
     display: grid;
     align-items: start;
@@ -757,14 +851,14 @@ textarea {
 }
 
 @media screen and (min-width: 62rem) {
-  /* line 5, ../../netmatters/JavaScript Array Reflection/scss/layout/_contact.scss */
+  /* line 5, ../../netmatters/JavaScript Array Reflection/JavaScript-Arrays/scss/layout/_contact.scss */
   .contact-container {
     grid-template-columns: 1fr 1fr;
     padding: 2rem;
   }
 }
 
-/* line 27, ../../netmatters/JavaScript Array Reflection/scss/layout/_contact.scss */
+/* line 27, ../../netmatters/JavaScript Array Reflection/JavaScript-Arrays/scss/layout/_contact.scss */
 .info-container {
   display: flex;
   flex-direction: column;
@@ -774,39 +868,39 @@ textarea {
 }
 
 @media screen and (min-width: 48rem) {
-  /* line 27, ../../netmatters/JavaScript Array Reflection/scss/layout/_contact.scss */
+  /* line 27, ../../netmatters/JavaScript Array Reflection/JavaScript-Arrays/scss/layout/_contact.scss */
   .info-container {
     max-width: 45ch;
   }
 }
 
 @media screen and (min-width: 75rem) {
-  /* line 38, ../../netmatters/JavaScript Array Reflection/scss/layout/_contact.scss */
+  /* line 38, ../../netmatters/JavaScript Array Reflection/JavaScript-Arrays/scss/layout/_contact.scss */
   .contact-info {
     justify-self: center;
   }
 }
 
-/* line 42, ../../netmatters/JavaScript Array Reflection/scss/layout/_contact.scss */
+/* line 42, ../../netmatters/JavaScript Array Reflection/JavaScript-Arrays/scss/layout/_contact.scss */
 .contact-info address {
   min-height: 3.8rem;
 }
 
 @media screen and (min-width: 48rem) {
-  /* line 42, ../../netmatters/JavaScript Array Reflection/scss/layout/_contact.scss */
+  /* line 42, ../../netmatters/JavaScript Array Reflection/JavaScript-Arrays/scss/layout/_contact.scss */
   .contact-info address {
     min-height: 4.2rem;
   }
 }
 
 @media screen and (min-width: 62rem) {
-  /* line 42, ../../netmatters/JavaScript Array Reflection/scss/layout/_contact.scss */
+  /* line 42, ../../netmatters/JavaScript Array Reflection/JavaScript-Arrays/scss/layout/_contact.scss */
   .contact-info address {
     min-height: 6rem;
   }
 }
 
-/* line 51, ../../netmatters/JavaScript Array Reflection/scss/layout/_contact.scss */
+/* line 51, ../../netmatters/JavaScript Array Reflection/JavaScript-Arrays/scss/layout/_contact.scss */
 .contact-info .tel {
   position: relative;
   transition: #0652ff 250ms ease-in 150ms;
@@ -814,7 +908,7 @@ textarea {
   transition: font-size 50ms ease-out 50ms;
 }
 
-/* line 43, ../../netmatters/JavaScript Array Reflection/scss/abstracts/_mixins.scss */
+/* line 43, ../../netmatters/JavaScript Array Reflection/JavaScript-Arrays/scss/abstracts/_mixins.scss */
 .contact-info .tel::after {
   content: "";
   position: absolute;
@@ -828,20 +922,20 @@ textarea {
   transition: transform 250ms ease-in-out;
 }
 
-/* line 55, ../../netmatters/JavaScript Array Reflection/scss/abstracts/_mixins.scss */
+/* line 55, ../../netmatters/JavaScript Array Reflection/JavaScript-Arrays/scss/abstracts/_mixins.scss */
 .contact-info .tel:hover::after, .contact-info .tel:focus::after {
   transform: scaleX(1);
   transform-origin: left;
 }
 
-/* line 66, ../../netmatters/JavaScript Array Reflection/scss/abstracts/_mixins.scss */
+/* line 66, ../../netmatters/JavaScript Array Reflection/JavaScript-Arrays/scss/abstracts/_mixins.scss */
 .contact-info .tel:hover, .contact-info .tel:focus {
   color: #0652ff;
   font-size: 1.5rem;
   font-weight: 800;
 }
 
-/* line 56, ../../netmatters/JavaScript Array Reflection/scss/layout/_contact.scss */
+/* line 56, ../../netmatters/JavaScript Array Reflection/JavaScript-Arrays/scss/layout/_contact.scss */
 .contact-info .email {
   position: relative;
   transition: #0652ff 250ms ease-in 150ms;
@@ -849,7 +943,7 @@ textarea {
   transition: font-size 50ms ease-out 50ms;
 }
 
-/* line 43, ../../netmatters/JavaScript Array Reflection/scss/abstracts/_mixins.scss */
+/* line 43, ../../netmatters/JavaScript Array Reflection/JavaScript-Arrays/scss/abstracts/_mixins.scss */
 .contact-info .email::after {
   content: "";
   position: absolute;
@@ -863,25 +957,25 @@ textarea {
   transition: transform 250ms ease-in-out;
 }
 
-/* line 55, ../../netmatters/JavaScript Array Reflection/scss/abstracts/_mixins.scss */
+/* line 55, ../../netmatters/JavaScript Array Reflection/JavaScript-Arrays/scss/abstracts/_mixins.scss */
 .contact-info .email:hover::after, .contact-info .email:focus::after {
   transform: scaleX(1);
   transform-origin: left;
 }
 
-/* line 66, ../../netmatters/JavaScript Array Reflection/scss/abstracts/_mixins.scss */
+/* line 66, ../../netmatters/JavaScript Array Reflection/JavaScript-Arrays/scss/abstracts/_mixins.scss */
 .contact-info .email:hover, .contact-info .email:focus {
   color: #0652ff;
   font-size: 1.5rem;
   font-weight: 800;
 }
 
-/* line 63, ../../netmatters/JavaScript Array Reflection/scss/layout/_contact.scss */
+/* line 63, ../../netmatters/JavaScript Array Reflection/JavaScript-Arrays/scss/layout/_contact.scss */
 .contact-notice {
   max-width: 45ch;
 }
 
-/* line 67, ../../netmatters/JavaScript Array Reflection/scss/layout/_contact.scss */
+/* line 67, ../../netmatters/JavaScript Array Reflection/JavaScript-Arrays/scss/layout/_contact.scss */
 .notice {
   padding: 0.5rem;
   border: 0.2rem solid #0652ff;
@@ -890,29 +984,29 @@ textarea {
   margin: -1rem 0 1.625rem;
 }
 
-/* line 73, ../../netmatters/JavaScript Array Reflection/scss/layout/_contact.scss */
+/* line 73, ../../netmatters/JavaScript Array Reflection/JavaScript-Arrays/scss/layout/_contact.scss */
 .notice strong {
   font-size: 0.875rem;
 }
 
-/* line 76, ../../netmatters/JavaScript Array Reflection/scss/layout/_contact.scss */
+/* line 76, ../../netmatters/JavaScript Array Reflection/JavaScript-Arrays/scss/layout/_contact.scss */
 .notice em {
   text-decoration: underline;
 }
 
-/* line 81, ../../netmatters/JavaScript Array Reflection/scss/layout/_contact.scss */
+/* line 81, ../../netmatters/JavaScript Array Reflection/JavaScript-Arrays/scss/layout/_contact.scss */
 .contact-form {
   width: 100%;
 }
 
 @media screen and (min-width: 48rem) {
-  /* line 81, ../../netmatters/JavaScript Array Reflection/scss/layout/_contact.scss */
+  /* line 81, ../../netmatters/JavaScript Array Reflection/JavaScript-Arrays/scss/layout/_contact.scss */
   .contact-form {
     max-width: 35rem;
   }
 }
 
-/* line 7, ../../netmatters/JavaScript Array Reflection/scss/utilities/_containers.scss */
+/* line 7, ../../netmatters/JavaScript Array Reflection/JavaScript-Arrays/scss/utilities/_containers.scss */
 .wrapper-outer {
   max-width: 120rem;
   background-image: url(../img/matrix-wallpaper.jpg);
@@ -920,7 +1014,7 @@ textarea {
   margin: 0 auto;
 }
 
-/* line 16, ../../netmatters/JavaScript Array Reflection/scss/utilities/_containers.scss */
+/* line 16, ../../netmatters/JavaScript Array Reflection/JavaScript-Arrays/scss/utilities/_containers.scss */
 .wrapper-inner {
   width: 100%;
   max-width: 75rem;
@@ -931,27 +1025,27 @@ textarea {
 }
 
 @media screen and (min-width: 48rem) {
-  /* line 16, ../../netmatters/JavaScript Array Reflection/scss/utilities/_containers.scss */
+  /* line 16, ../../netmatters/JavaScript Array Reflection/JavaScript-Arrays/scss/utilities/_containers.scss */
   .wrapper-inner {
     padding: 2rem;
   }
 }
 
 @media screen and (min-width: 62rem) {
-  /* line 16, ../../netmatters/JavaScript Array Reflection/scss/utilities/_containers.scss */
+  /* line 16, ../../netmatters/JavaScript Array Reflection/JavaScript-Arrays/scss/utilities/_containers.scss */
   .wrapper-inner {
     padding: 4rem;
   }
 }
 
-/* line 33, ../../netmatters/JavaScript Array Reflection/scss/utilities/_containers.scss */
+/* line 33, ../../netmatters/JavaScript Array Reflection/JavaScript-Arrays/scss/utilities/_containers.scss */
 .setup-container {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
 
-/* line 42, ../../netmatters/JavaScript Array Reflection/scss/utilities/_containers.scss */
+/* line 42, ../../netmatters/JavaScript Array Reflection/JavaScript-Arrays/scss/utilities/_containers.scss */
 .config-container {
   display: flex;
   justify-content: center;

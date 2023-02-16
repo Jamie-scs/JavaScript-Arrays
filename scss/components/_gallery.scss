@@ -2,13 +2,19 @@
 // Image Gallery
 // ========================================
 
+.gallery-header		{
+	display: flex;
+	justify-content: space-between;
+}
+
 .img-array			{
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr));
 	gap: 2rem;
+	margin: 2rem;
 }
 
-.frame-pre 				{
+.frame-previous 				{
 	position: relative;
 	min-width: 6rem;
 	min-height: 4.5rem;
@@ -32,7 +38,7 @@
 	outline: 0.1rem solid darken(saddlebrown, 20%);
 }
 
-.frame-post				{
+.frame-next				{
 	position: relative;
 	min-width: 6rem;
 	min-height: 4.5rem;
@@ -55,7 +61,7 @@
 	position: relative;
 	min-width: 8rem;
 	min-height: 6rem;
-	background: rgba(0, 0, 0, 0.6);
+	background: rgba(255, 255, 195, 0.4);
 	border-top: 0.8rem solid darken(saddlebrown, 2%);
 	border-right: 0.9rem solid darken(saddlebrown, 5%);
 	border-bottom: 0.8rem solid darken(saddlebrown, 8%);

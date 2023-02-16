@@ -1,61 +1,35 @@
 // ========================================
-// JavaScript
+// JavaScript app.js
 // ========================================
 
-// Fetch API
+// ========================================
+// Declare Variables from DOM Elements
+// ========================================
 
-const API_KEY = '33470512-baf6af1551ac4e34a5de80fe8';
-let PAGE      = 1; //Current Page Number
-let URL       = "https://pixabay.com/api/?key="
-                +API_KEY+
-                "&image_type='photo'&orientation='horizontal'&min_width=129&min_height=96&safesearch='true'&page="
-                +PAGE;
-fetch(URL)
-	.then(res => res.json())
-	.then(data => console.log(data))
+const
+	nextBtn        = document.getElementById('next'),
+	addBtn         = document.getElementById('add-image'),
+	previousBtn    = document.getElementById('previous'),
+	gallery        = document.getElementById('img-array'),
+	galleryFrames  = document.getElementsByClassName('frame'),
+	removeImageBtn = document.getElementById('remove'),
+	// lightsBtn      = document.getElementById('lights'),
+	// cleanBtn       = document.getElementById('clean'),
+	deleteImageBtn = document.getElementById('delete-img'),
+	formSaved      = document.forms['form-saved'],
+	select         = formSaved.select,
+	options        = formSaved.select.options,
+	loadArrBtn     = document.getElementById('load'),
+	deleteArrBtn   = document.getElementById('delete'),
+	emailAddress   = document.getElementById('address'),
+	createArrBtn   = document.getElementById('save'),
+	clearFormBtn   = document.getElementById('clear');
 
-let preloadArr = [];
-
-$.getJSON(URL, function(data){
-	if (parseInt(data.totalHits) > 0)
-	    $.each(data.hits, function(i, hit) {
-	    	console.log(hit.previewURL);
-	    	preloadArr.push(hit.previewURL);
-	    });	
-	else
-	    console.log('No hits');
-	});
-console.log(preloadArr);
-
-// Populate Next Array
-
-let nextArr = [];
-
-for (let i = nextArr.length; i < 11; i++) {
-	let image = preloadArr.value;
-	nextArr.push(image);
-}
-
-console.log(nextArr);
-
-// Populate Previous Array
-
-let previousArr = [];
-
-previousArr.unshift(nextArr.pop());
-
-console.log(previousArr);
-
-// Assign Choices to Available Frames
-
-let
-	nextOptions  = document.getElementsByClassName('next'),
-	currOption   = document.getElementById('current'),
-	prevOptions  = document.getElementsByClassName('previous');
-
+// ========================================
 // Button Sound effects
+// ========================================
 
-let
+const
 	saveSound = new Audio('../audio/save.mp3'),
 	loadSound = new Audio('../audio/load.mp3'),
 	deleteSound = new Audio('../audio/delete.mp3'),
@@ -65,11 +39,122 @@ let
 	removeSound = new Audio('../audio/remove.mp3'),
 	sendSound = new Audio('../audio/send.mp3');
 
+// ========================================
+// Define Arrays
+// ========================================
+
+let preloadImages = []; //Cached Images Array
+let	nextImages = [];
+let currentImage = [];
+let previousImages = [];
+let galleryImages = [];
+let savedArrays = [];
+
+// ========================================
+// Fetch API
+// ========================================
+
+// let PAGE      = 1; //Current Page Number
+// const API_KEY = '33470512-baf6af1551ac4e34a5de80fe8';
+// const URL       = "https://pixabay.com/api/?key="
+//                 +API_KEY+
+//                 "&image_type='photo'&orientation='horizontal'&min_width=129&min_height=96&safesearch='true'&page="
+//                 +PAGE;
+
+// const getImages = new XMLHttpRequest();
+// getImages.open('GET', URL);
+// getImages.onload = function() {
+// 	let dataImages = JSON.parse(getImages.responseText);	
+// 	dataImages.hits.map((e)=>{
+// 		preloadImages.push(e.previewURL)
+// 	})
+
+// }
+// getImages.send();
+
+
+
+// function fillPreload() {
+// 	PAGE++;
+// 	getImages.open('GET', URL);
+// 	getImages.send();
+// 	refillNext();
+// }
+// console.log(preloadImages);
+// console.log(Array.prototype.flatMap.call(preloadImages, (x) => [x, x * 2]));
+
+
+// ========================================
+// Array Population
+// ========================================
+
+// Temporary / Testing 'Image' Generator
+let img = 0;
+function fillPreload() {
+	if (preloadImages.length === 0) {
+		while (preloadImages.length < 20) {
+			preloadImages.push("IMG " + img);
+			img++;
+		}
+	}
+}
+fillPreload()
+
+// Assign Choices to Available Frames
+
+function refillNext() {
+	while (nextImages.length < 10) {
+		nextImages.push(preloadImages.shift())
+		if (preloadImages.length === 0) {
+			fillPreload()
+		}
+	}
+}
+refillNext()
+
+currentImage.push(nextImages.shift());
+
+let
+	nextFrames    = document.getElementsByClassName('frame-next'),
+	currentFrame     = document.getElementById('current'),
+	previousFrames    = document.getElementsByClassName('frame-previous');
+
+
+function fillNext() {
+	for (let i = 0; i < nextFrames.length; i++) {
+		nextFrames[i].innerHTML = nextImages[i];
+	}
+}
+fillNext()
+
+function fillCurrent() {
+	currentFrame.innerHTML = currentImage;
+}
+fillCurrent()
+
+// ========================================
+// Create New Array
+// ========================================
+
+// Check Input Function
+
+function checkInput() {
+	if(validateInput(emailAddress))	{
+		console.log('valid');
+		if (checkExisting(emailAddress.value)) {
+			console.log('not existing');
+			createNewArray(emailAddress.value);
+			return;
+		}
+		console.log('exists');
+	}
+};
+
 // Input Form Validation
 
-let formInput	= document.getElementById("form-input"),
-	errorInput	= document.getElementsByClassName("input-error"),
-	failIcnInput	= document.getElementsByClassName("input-failure");
+let 
+	errorInput	    = document.querySelector(".input-error"),
+	failIcnInput	= document.querySelector(".input-failure");
 
 const errInput	=
 	{
@@ -81,61 +166,69 @@ const errInput	=
 
 const regExpEm	= new RegExp(/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/);
 
-const failInput = (id) => {
-    id.style.border = "2px solid red";
+function failInput() {
+    emailAddress.style.border = "2px solid red";
     failIcnInput.style.opacity = "1";
 };
 
-const validateInput	= (id) => {
+function validateInput(id) {
 	let val = id.value.trim();
-	if (val === "" && id !== phone)	{
+	if (val === "")	{
 		errorInput.innerHTML = errInput.noContent;
-		failInput(id);
+		failInput();
 	    return;
 	}
 	if (!val.match(regExpEm))	{
 		errorInput.innerHTML = errInput.notEmail;
-	    failInput(id);
+	    failInput();
 	    return;
 	}
 	if (val.length > 254)	{
 		errorInput.innerHTML = errInput.isLong;
-	    failInput(id);
+	    failInput();
 	    return;
 	}
 	errorInput.innerHTML = "";
 	id.style.border = "none";
     failIcnInput.style.opacity = "0";
+    return true;
 };
 
 // Check If Email Already Exists
 
-const checkExisting = (id) => {
-	savedArr.forEach(element => {
-		if (element.email === id)   {
+function checkExisting(email) {
+	for (var i = 0; i < savedArrays.length; i++) {
+		if (savedArrays[i].email === email)   {
 			errorInput.innerHTML = errInput.allreadyExists;
-			failInput(id);
+			failInput();
 			return;
 		}
-	});
+	}
+	return true;
 };
 
-// Check Array Function
+// Create New Option
 
-const checkArray = e => {
-	validateInput(emailAddress);
-	checkExisting(emailAddress);
-	createNewArray()
-};
+function insertOption (i) {
+	const 
+		newOption = document.createElement('option'),
+		newOptionValue = document.createTextNode(emailAddress.value);
+	newOption.appendChild(newOptionValue);
+	newOption.setAttribute('value', i);
+	newOption.setAttribute('selected', '');
+	select.insertBefore(newOption, select.lastChild);
+}
 
 // Create New Array
 
-const createNewArray = () => {
-	let index = 0;
-	if (savedArrays) {
-		index = savedArrays.length;
+function createNewArray(email) {
+	let i = 0;
+	if (savedArrays.length !== undefined) {
+		i = savedArrays.length;
 	}
-	savedArrays[index] = new SavedArray(emailAddress);
+	savedArrays.push(new SavedArray(email));
+	insertOption(i);
+	clearForm();
 	saveSound.play();
 }
 
@@ -143,36 +236,170 @@ const createNewArray = () => {
 
 class SavedArray {
 	constructor(emailAddress) {
-		this.email = emailAddress;
-		this.photos = {};
+		this.email  = emailAddress;
+		this.photos = [];
 	}
 }
 
-const
-	emailAddress = document.getElementById('address'),
-	createArrBtn = document.getElementById('save'),
-	clearForm    = document.getElementById('clear');
+createArrBtn.addEventListener('click', checkInput);
 
-createArrBtn.addEventListener('click', checkArray);
+// Clear Form Button
 
-// Array Storage
+clearFormBtn.addEventListener('click', clearForm);
 
-const
-	savedArr    = document.getElementById('addresses'),
-	loadArr     = document.getElementById('load'),
-	deleteArr   = document.getElementById('delete');
+function clearForm() {
+	errorInput.innerHTML = "";
+	address.style.border = "none";
+    failIcnInput.style.opacity = "0";
+    emailAddress.value = "";
+}
 
+// ========================================
+// Saved Array Control
+// ========================================
+
+let optionValue = select.value;
+
+select.addEventListener('change', () => {
+	optionValue  = select.value;
+	console.log(optionValue);
+})
+
+loadArrBtn.addEventListener('click', () => {
+	if(optionValue === undefined){
+		alert("Please select an Array")
+		return
+	}
+	loadArray(optionValue);
+	loadSound.play()
+})
+
+function loadArray(index) {
+	if (savedArrays[index].photos) {
+		galleryImages = savedArrays[index].photos;
+	}
+}
+
+function saveArray(index) {
+	savedArrays[index].photos = galleryImages;
+}
+
+deleteArrBtn.addEventListener('click', () => {
+	if(!select.value){
+		alert("Please select an Array")
+		return
+	}
+	select.value.remove()
+	// savedArrays[optionValue].remove();
+	deleteSound.play()
+})
+
+// ========================================
 // Image Control
+// ========================================
 
-const
-	previousBtn = document.getElementById('previous'),
-	addImageBtn = document.getElementById('add-image'),
-	nextBtn     = document.getElementById('next');
+function fillPrevious() {
+	if (previousImages.length !== 0) {
+		for (let i = 0; i < previousFrames.length; i++) {
+			previousFrames[i].innerHTML = previousImages[i];
+		}
+		return;
+	}
+	previousFrames[0].innerHTML = "";
+}
+fillPrevious()
 
+nextBtn.addEventListener('click', () => {
+	previousImages.unshift(currentImage.pop());
+	currentImage.push(nextImages.shift());
+	refillNext()
+	fillNext()
+	fillCurrent()
+	nextSound.play();
+	if (previousImages[0] === undefined) {
+		previousFrames[0].innerHTML = "";
+		return
+	}
+	fillPrevious()
+})
 
+addBtn.addEventListener('click', () => {
+	if (currentImage[0] !== undefined) {
+		galleryImages.push(currentImage.pop());
+		currentImage.push(nextImages.shift());
+		fillGallery()
+		refillNext()
+		fillNext()
+		fillCurrent()
+		saveArray()
+		addSound.play();
+	}
+})
 
+previousBtn.addEventListener('click', () => {
+	if (currentImage[0] !== undefined) {
+		nextImages.unshift(currentImage.pop());
+		currentImage.push(previousImages.shift());
+		fillNext()
+		fillCurrent()
+		fillPrevious()
+		if (previousImages[0] === undefined) {
+			previousFrames[0].innerHTML = "";
+			return
+		}
+		prevSound.play();
+	}
+})
 
+// ========================================
+// Gallery Control
+// ========================================
+
+removeImageBtn.addEventListener('click', () => {
+	if (galleryImages[0]) {
+		if (currentImage[0] !== undefined) {
+			nextImages.unshift(currentImage.pop());
+			fillNext()
+		}
+		currentImage.push(galleryImages.shift());
+		emptyGallery()
+		fillGallery()
+		fillCurrent()
+		saveArray()
+		removeSound.play()
+	}
+})
+
+function addGalleryItem() {
+	gallery.insertAdjacentHTML('beforeend', '<div class="frame-container"><div class="frame"></div><div class="uplighter"><img src="img/uplight.svg" alt="Wall light to highlight picture."></div></div><!-- frame-container -->')
+}
+function removeGalleryItem() {
+	gallery.lastElementChild.remove();
+}
+
+function fillGallery() {
+	if (galleryImages.length === galleryFrames.length + 1) {
+		addGalleryItem();	
+	}
+	if (galleryImages.length !== 0) {
+		for (let i = 0; i < galleryImages.length; i++) {
+			galleryFrames[i].innerHTML = galleryImages[i];
+		}
+	}
+	for (let i = galleryImages.length; i < galleryFrames.length; i++) {
+		galleryFrames[i].innerHTML = "";
+	}
+}
+
+function emptyGallery() {
+	if (galleryImages.length < galleryFrames.length && galleryFrames.length > 18) {
+		removeGalleryItem()
+	}
+}
+
+// ========================================
 // Contact Form Validation
+// ========================================
 
 let form		= document.getElementById("form"),
 	firstName	= document.getElementById("name"),
@@ -284,14 +511,19 @@ const validate	= (id, index) => {
     id.style.border = "2px solid green";
     failureIcon[index].style.opacity = "0";
     successIcon[index].style.opacity = "1";
+    return true;
 };
 
 form.addEventListener('submit', (e) => {
 	e.preventDefault();
-	validate(firstName, 0);
-	validate(surname, 1);
-	validate(email, 2);
-	validate(phone, 3);
-	validate(subject, 4);
-	validate(message, 5);
+	if (
+	validate(firstName, 0) &&
+	validate(surname, 1) &&
+	validate(email, 2) &&
+	validate(phone, 3) &&
+	validate(subject, 4) &&
+	validate(message, 5)	){
+
+	sendSound.play();
+	}
 });

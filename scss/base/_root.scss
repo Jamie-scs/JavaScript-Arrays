@@ -6,4 +6,7 @@
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	font-size: 1em;
+	&:focus-visible		{
+		outline: none;
+	}
 }

@@ -113,11 +113,19 @@
 				</div><!-- social-icn -->
 			</div><!-- social-links -->
 		</header>
+
+<!--======================================
+ *********** CREATE NEW ARRAY ***********
+=======================================-->
+
 		<main>
 			<div class="setup-container">
+				
 				<div class="input-container">
-					<h2>Create New Array</h2>
-					<form id="form-input">
+					<div class="header-banner">
+						<h2>Create New Array</h2>
+					</div>
+					<form name="form-input" novalidate>
 						<label for="address">Email:</label>
 							<div class="form-input">
 								<input type="email" id="address" name="address" class="form-control">
@@ -125,145 +133,173 @@
 								<div class="input-error"></div>
 							</div><!-- form-input -->
 						<div class="btn-group">
-							<button type="submit" class="btn success" id="save">Create Array</button>
-							<button type="button" class="btn danger" id="clear">Clear Form</button>
+							<button type="button" class="btn success" id="save">Create Array</button>
+							<button type="reset" class="btn danger" id="clear">Clear Form</button>
 						</div><!-- btn-group -->
 					</form>
 				</div><!-- input-container -->
+
+<!--======================================
+ ************ ARRAY STORAGE ************
+=======================================-->
+
 				<div class="address-container">
-					<h2>Array Storage</h2>
-					<form id="form-saved">
-						<label for="addresses">Saved Addresses:</label>
-						<select name="addresses" id="addresses"></select>
+					<div class="header-banner">
+						<h2>Array Storage</h2>
+					</div>
+					<form name="form-saved">
+						<label for="select">Saved Array Addresses:</label>
+						<select name="select" id="select" class="form-control"></select>
 						<div class="btn-group">
 							<button type="button" class="btn success" id="load">Load Array</button>
 							<button type="button" class="btn danger" id="delete">Delete Array</button>
 						</div><!-- btn-group -->
 					</form>
 				</div><!-- address-container -->
+
 			</div><!-- setup-container -->
+
+<!--======================================
+ *********** GALLERY CONTROL ***********
+=======================================-->
+
 			<div class="config-container">
 				<div class="preview-container">
-					<h2>Image Preview</h2>
+					<div class="header-banner">
+						<h2>Image Preview</h2>
+					</div>
 					<div class="img-preview">
-						<div class="frame-pre"></div>
+						<div class="frame-previous"></div>
 						<div id="current" class="frame-current"></div>
-						<div class="frame-post"></div>
+						<div class="frame-next"></div>
 					</div><!-- img-preview -->
 					<div class="btn-group">
-						<button type="button" class="btn option" id="previous">Previous</button>
-						<button type="button" class="btn select" id="add-image">Add Image</button>
-						<button type="button" class="btn option" id="next">Next</button>
+						<button type="button" class="btn control-btn option" id="previous">Previous</button>
+						<button type="button" class="btn control-btn select" id="add-image">Add Image</button>
+						<button type="button" class="btn control-btn option" id="next">Next</button>
 					</div><!-- btn-group -->
 				</div><!-- preview-container -->
 			</div><!-- config-container -->
+
+<!--======================================
+ *************** GALLERY ***************
+=======================================-->
+
 			<div class="output-container">
-				<h2>Gallery</h2>
+				<div class="gallery-header">
+					<!-- <button type="button" class="btn gallery-btn option" id="lights">Lights</button> -->
+					<div class="header-banner">
+						<h2>Gallery</h2>
+					</div>
+					<button type="button" class="btn gallery-btn select" id="remove">Remove Image</button>
+					<!-- <button type="button" class="btn gallery-btn option" id="clean">Clean Up</button> -->
+					<!-- <button type="button" class="btn gallery-btn danger" id="delete-img">Delete Image</button> -->
+				</div>
 				<div id="img-array" class="img-array">
 					<div class="frame-container">
-						<div class="frame">1</div>
+						<div class="frame"></div>
 						<div class="uplighter">
 							<img src="img/uplight.svg" alt="Wall light to highlight picture.">
 						</div>
 					</div><!-- frame-container -->
 					<div class="frame-container">
-						<div class="frame">2</div>
+						<div class="frame"></div>
 						<div class="uplighter">
 							<img src="img/uplight.svg" alt="Wall light to highlight picture.">
 						</div>
 					</div><!-- frame-container -->
 					<div class="frame-container">
-						<div class="frame">3</div>
+						<div class="frame"></div>
 						<div class="uplighter">
 							<img src="img/uplight.svg" alt="Wall light to highlight picture.">
 						</div>
 					</div><!-- frame-container -->
 					<div class="frame-container">
-						<div class="frame">4</div>
+						<div class="frame"></div>
 						<div class="uplighter">
 							<img src="img/uplight.svg" alt="Wall light to highlight picture.">
 						</div>
 					</div><!-- frame-container -->
 					<div class="frame-container">
-						<div class="frame">5</div>
+						<div class="frame"></div>
 						<div class="uplighter">
 							<img src="img/uplight.svg" alt="Wall light to highlight picture.">
 						</div>
 					</div><!-- frame-container -->
 					<div class="frame-container">
-						<div class="frame">6</div>
+						<div class="frame"></div>
 						<div class="uplighter">
 							<img src="img/uplight.svg" alt="Wall light to highlight picture.">
 						</div>
 					</div><!-- frame-container -->
 					<div class="frame-container">
-						<div class="frame">7</div>
+						<div class="frame"></div>
 						<div class="uplighter">
 							<img src="img/uplight.svg" alt="Wall light to highlight picture.">
 						</div>
 					</div><!-- frame-container -->
 					<div class="frame-container">
-						<div class="frame">8</div>
+						<div class="frame"></div>
 						<div class="uplighter">
 							<img src="img/uplight.svg" alt="Wall light to highlight picture.">
 						</div>
 					</div><!-- frame-container -->
 					<div class="frame-container">
-						<div class="frame">9</div>
+						<div class="frame"></div>
 						<div class="uplighter">
 							<img src="img/uplight.svg" alt="Wall light to highlight picture.">
 						</div>
 					</div><!-- frame-container -->
 					<div class="frame-container">
-						<div class="frame">10</div>
+						<div class="frame"></div>
 						<div class="uplighter">
 							<img src="img/uplight.svg" alt="Wall light to highlight picture.">
 						</div>
 					</div><!-- frame-container -->
 					<div class="frame-container">
-						<div class="frame">11</div>
+						<div class="frame"></div>
 						<div class="uplighter">
 							<img src="img/uplight.svg" alt="Wall light to highlight picture.">
 						</div>
 					</div><!-- frame-container -->
 					<div class="frame-container">
-						<div class="frame">12</div>
+						<div class="frame"></div>
 						<div class="uplighter">
 							<img src="img/uplight.svg" alt="Wall light to highlight picture.">
 						</div>
 					</div><!-- frame-container -->
 					<div class="frame-container">
-						<div class="frame">13</div>
+						<div class="frame"></div>
 						<div class="uplighter">
 							<img src="img/uplight.svg" alt="Wall light to highlight picture.">
 						</div>
 					</div><!-- frame-container -->
 					<div class="frame-container">
-						<div class="frame">14</div>
+						<div class="frame"></div>
 						<div class="uplighter">
 							<img src="img/uplight.svg" alt="Wall light to highlight picture.">
 						</div>
 					</div><!-- frame-container -->
 					<div class="frame-container">
-						<div class="frame">15</div>
+						<div class="frame"></div>
 						<div class="uplighter">
 							<img src="img/uplight.svg" alt="Wall light to highlight picture.">
 						</div>
 					</div><!-- frame-container -->
 					<div class="frame-container">
-						<div class="frame">16</div>
+						<div class="frame"></div>
 						<div class="uplighter">
 							<img src="img/uplight.svg" alt="Wall light to highlight picture.">
 						</div>
 					</div><!-- frame-container -->
 					<div class="frame-container">
-						<div class="frame">17</div>
+						<div class="frame"></div>
 						<div class="uplighter">
 							<img src="img/uplight.svg" alt="Wall light to highlight picture.">
 						</div>
 					</div><!-- frame-container -->
 					<div class="frame-container">
-						<div class="frame">18</div>
+						<div class="frame"></div>
 						<div class="uplighter">
 							<img src="img/uplight.svg" alt="Wall light to highlight picture.">
 						</div>
@@ -272,7 +308,9 @@
 			</div><!-- output-container -->
 		</main>
 		
-<!-- CONTACT FORM-->
+<!--======================================
+ ************* CONTACT FORM *************
+=======================================-->
 		
 		<footer>
 			<section id="contact">
@@ -294,7 +332,7 @@
 						</div>
 					</div>
 					<div class="contact-form">
-						<form id="form">
+						<form id="form" novalidate>
 							<div class="form-group">
 								<label for="name">First Name:</label>
 								<div class="form-input">

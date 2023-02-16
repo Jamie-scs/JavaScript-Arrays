@@ -5,14 +5,15 @@
 // Global Button Style
 
 .btn 				{
-	width: 90%;
-	min-height: 3rem;
-	font-size: .825rem;
+	min-width: 50%;
+	min-height: 2.75rem;
+	font-size: 1rem;
 	font-weight: 600;
 	text-transform: uppercase;
-	padding: 0.75rem 1.75rem;
-	border: none;
+	padding: 0 1.75rem;
+	border: 0.2rem solid rgba(255, 255, 255, 0.4);
 	border-radius: 0.5rem;
+	box-shadow: -0.05rem -0.05rem 0.4rem 0.2rem rgba(0, 0, 0, 0.4);
 	margin: 1rem;
 	@include mqm(small)	{
 		padding: 0.75rem 2.5rem;
@@ -21,6 +22,17 @@
 		min-width: 8rem;
 		border-radius: 0.75rem;
 	}
+	&:active			{
+		box-shadow: inset -0.2rem -0.2rem 0.4rem 0.2rem rgba(0, 0, 0, 0.4);
+	}
+}
+
+.control-btn		{
+	min-width: 25%;
+}
+
+.gallery-btn		{
+	min-width: 20%;
 }
 
 @each $name, $color in $colors 	{
@@ -28,30 +40,14 @@
 		&.#{$name} 						{
 			background-color: $color;
 			@include btn($color);
+			&:active						{
+				border-color: $color;
+			}
 		}
 	}
-}
-
-// Array Controls
-
-.success			{
-	
-}
-
-.danger				{
-	
-}
-
-.select				{
-	
-}
-
-.option				{
-	
-}
-
-// Contact Form
-
-.submit				{
-
+	.gallery-btn			{
+		&.#{$name}				{
+			background-color: rgba($color, 0.8);
+		}
+	}
 }
